@@ -1,0 +1,16 @@
+{
+  "name": "gradient_selector",
+  "version": "1.0.0",
+  "description": "A MERN stack app to create and modify the gradients",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yogesh gaur",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.9.27",
+    "node-html-to-image": "^3.1.0"
+  }
+}
