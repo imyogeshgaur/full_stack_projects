@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Fondamento&family=Galada&family=Open+Sans&family=Oswald:wght@300&family=Roboto:ital,wght@0,100;1,400&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="/public/css/style.css">
+
+  <title>Sign Up Form</title>
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">LocalIndiaShop</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item inactive">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item inactive">
+          <a class="nav-link" href="about.html">About Us</a>
+        </li>
+        <li class="nav-item inactive">
+          <a class="nav-link" href="products.html">Products</a>
+        </li>
+        <li class="nav-item inactive">
+          <a class="nav-link" href="contact.html">Contact Us</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0 mx-2">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Search</button>
+      </form>
+      <form class="form-inline my-2 my-lg-0 mx-2">
+        <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#loginModal"> Log In
+        </button>
+      </form>
+      <form class="form-inline my-2 my-lg-0 mx-2">
+        <a href="#">
+          <button type="button" class="btn btn-outline-primary"> Sign Up </button>
+        </a>
+      </form>
+      </form>
+    </div>
+  </nav>
+
+  <!--login  modal -->
+  <div class="modal fade" id="loginModal" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Enter Your Credentials</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="usernameModal">Username or Email address</label>
+              <input type="text" class="form-control" id="usernameModal" aria-describedby="emailHelp">
+              <small id="emailHelp" class="form-text text-muted"></small>
+            </div>
+            <div class="form-group">
+              <label for="passwordModal">Password</label>
+              <input type="password" class="form-control" id="passwordModal">
+              <small id="passwordHelp" class="form-text text-muted"></small>
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Log In</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <h1 Style="font-family: cursive; text-align: center;">Register Here</h1>
+    <form>
+      <div class="form-group">
+        <label for="usernameOfCustomer" Style="font-family: cursive;">
+          Username
+        </label>
+        <input type="text" class="form-control" id="usernameOfCustomer" placeholder="Enter your username" />
+        <small id="usernameOfCustomervalid" class="form-text text-muted invalid-feedback">
+          Your username must be 2-10 characters long and should not start
+          with a number
+        </small>
+      </div>
+
+      <div class="form-group">
+        <label for="emailOfCustomer" Style="font-family: cursive;">
+          Email address
+        </label>
+        <input type="text" class="form-control" id="emailOfCustomer" placeholder="Enter your email" />
+        <small id="emailvalid" class="form-text text-muted invalid-feedback">
+          Your email must be a valid email
+        </small>
+      </div>
+      <div class="form-group">
+        <label for="fname" Style="font-family: cursive;">
+          First Name
+        </label>
+        <input type="text" class="form-control" id="fname" placeholder="Enter your First Name" />
+      </div>
+      <div class="form-group">
+        <label for="fname" Style="font-family: cursive;">
+          Last Name
+        </label>
+        <input type="text" class="form-control" id="lname" placeholder="Enter your Last Name" />
+      </div>
+      <div class="form-group">
+        <label for="address" Style="font-family: cursive;">
+          Address Line 1
+        </label>
+        <input type="text" class="form-control" id="address1" placeholder="Enter your Address Line 1 " />
+        <br />
+        <label for="address" Style="font-family: cursive;">
+          Address Line 2
+        </label>
+        <input type="text" class="form-control my-2" id="address2" placeholder="Enter your Address Line 2" />
+      </div>
+      <div class="form-group">
+        <label for="state" Style="font-family: cursive;">
+          Select your State
+        </label>
+        <select class="form-control" id="states">
+          <option></option>
+          <option>Andhra Pradesh</option>
+          <option>Arunachal Pradesh</option>
+          <option>Assam</option>
+          <option>Bihar</option>
+          <option>Chhattisgarh</option>
+          <option>Goa</option>
+          <option>Gujarat</option>
+          <option>Haryana</option>
+          <option>Himachal Pradesh</option>
+          <option>Jammu and Kashmi</option>
+          <option>Jharkhand</option>
+          <option>Karnataka</option>
+          <option>Kerala</option>
+          <option>Madhya Pradesh </option>
+          <option>Maharashtra </option>
+          <option>Manipur </option>
+          <option>Meghalaya</option>
+          <option>Mizoram </option>
+          <option>Nagaland</option>
+          <option>Odisha </option>
+          <option>Punjab </option>
+          <option>Rajasthan</option>
+          <option>Sikkim </option>
+          <option>Tamil Nadu</option>
+          <option>Telangana</option>
+          <option>Tripura </option>
+          <option>Uttar Pradesh</option>
+          <option>Uttarakhand </option>
+          <option> West Bengal</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="postalcode" Style="font-family: cursive;">
+          Enter your Postal/Zip Code
+        </label>
+        <input class="form-control" name="postalcode" id="postalcode" rows="3"
+          placeholder="Enter Your Postal/Zip Code" />
+      </div>
+      <div class="form-group">
+        <label for="phoneOfCustomer" Style="font-family: cursive;">
+          Enter your phone number
+        </label>
+        <input class="form-control" name="phone" id="phoneOfCustomer" rows="3" placeholder="Enter Your Phone Number" />
+      </div>
+      <div class="container my-20" Style="text-align: center; padding: 40px;">
+        <button id="submit" class="btn btn-primary" Style="font-family: cursive; padding: 10px;">
+          Sign Up
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+  <script src="/public/js/getval.js"></script>
+</body>
+
+</html>
