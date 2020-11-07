@@ -1,12 +1,6 @@
-from django.contrib import admin
 from django.urls import path
-from main import views
-
+from main.views import *
 urlpatterns = [
-    path('',views.index,name="index"),
-    path('index.html',views.index,name="index"),
-    path('about.html',views.about,name="about"),
-    path('products.html',views.products,name="products"),
-    path('contact.html',views.contact,name="contact"),
-    path('signup.html',views.signup,name="signup"),
+    path('',ReactView.as_view(template_name='Home.jsx')),
+    path('about',ReactView.as_view(template_name="About.jsx"))
 ]
